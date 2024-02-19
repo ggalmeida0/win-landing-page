@@ -7,6 +7,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
@@ -15,34 +16,37 @@ export default function Home() {
 
       {/* Hero */}
       <MaxWidthWrapper className="mt-10 flex flex-col items-center justify-center text-center sm:mt-12">
-        <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
+        {/* This is a badge with a CTA, uncomment when it becomes useful */}
+        {/* <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
           <p className="text-sm font-semibold text-gray-700">
             Try Convo for Free
           </p>
-        </div>
+        </div> */}
 
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
-          <span className="text-blue-600">Speech</span> Focused Language
-          Learning
+          <span className="text-blue-600">Personalized</span> Meal Plans for
+          Balanced Nutrition and Convenience
         </h1>
 
         <p className="mt-5 max-w-prose text-lg text-zinc-700 sm:text-2xl">
-          Convo helps you improve your spoken fluency with the help of an AI
-          tutor.
+          Create customized meal plans with a focus on specific dietary needs
+          and calorie goals, ensuring a balance of nutrition and taste
         </p>
-
-        <Link
-          className={cn(
-            buttonVariants({
-              size: "lg",
-              className: "mt-5",
-            }),
-            "text-lg",
-          )}
-          href={"/dashboard"}
-        >
-          Start Speaking Now
-        </Link>
+        <div className="m-10 flex flex-col">
+          <Input placeholder="Enter email" />
+          <Link
+            className={cn(
+              buttonVariants({
+                size: "lg",
+                className: "mt-5",
+              }),
+              "text-lg",
+            )}
+            href={"/dashboard"}
+          >
+            Join the Waitlist
+          </Link>
+        </div>
       </MaxWidthWrapper>
 
       {/* Value Prop */}
