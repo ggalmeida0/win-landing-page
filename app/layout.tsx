@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+import type { Metadata } from 'next';
+import { GeistSans } from 'geist/font/sans';
 
-import { cn } from "@/lib/utils";
-import "./globals.css";
+import { cn } from '@/lib/utils';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Win Dieting| Meal Planing",
-  description: "Win is a meal planning generation app",
+  title: 'Win Dieting| Meal Planing',
+  description: 'Win is a meal planning generation app',
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className="light">
       <body
         className={cn(
-          "grainy flex min-h-screen flex-col font-sans antialiased",
+          'grainy flex min-h-screen flex-col font-sans antialiased',
           GeistSans.className,
         )}
       >

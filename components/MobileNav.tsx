@@ -1,21 +1,21 @@
-import { Menu } from "lucide-react";
+import { Menu } from 'lucide-react';
 
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
-} from "@/components/ui/sheet";
-import { SideNav } from "@/components/SideNav";
+} from '@/components/ui/sheet';
+import { SideNav } from '@/components/SideNav';
 
 export const MobileNav = () => {
   return (
     <Sheet>
-      <SheetTrigger className="sm:hidden pr-4">
+      <SheetTrigger className="pr-4 sm:hidden">
         <Menu />
       </SheetTrigger>
 
-      <SheetContent side="right" className="p-0 bg-secondary pt-5 w-32">
+      <SheetContent side="right" className="w-32 bg-secondary p-0 pt-5">
         <SheetClose />
         <SideNav />
       </SheetContent>

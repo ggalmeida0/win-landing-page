@@ -1,11 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { buttonVariants } from "@/components/ui/button";
-import { MobileNav } from "@/components/MobileNav";
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { buttonVariants } from '@/components/ui/button';
+import { MobileNav } from '@/components/MobileNav';
 
 const Navbar = () => {
   // Replace with your auth of choice, e.g. Clerk: const { userId } = auth();
@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "sticky inset-x-0 top-0 z-30 h-14 border-b border-gray-200  bg-white/40 backdrop-blur-lg transition-all",
+        'sticky inset-x-0 top-0 z-30 h-14 border-b border-gray-200  bg-white/40 backdrop-blur-lg transition-all',
       )}
     >
       <MaxWidthWrapper>
@@ -39,8 +39,8 @@ const Navbar = () => {
             ) : (
               <Link
                 className={buttonVariants({
-                  size: "sm",
-                  className: "mr-3 sm:hidden",
+                  size: 'sm',
+                  className: 'mr-3 sm:hidden',
                 })}
                 href="/dashboard"
               >
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <>
                   <Link
                     className={buttonVariants({
-                      size: "sm",
+                      size: 'sm',
                     })}
                     href="/dashboard"
                   >
