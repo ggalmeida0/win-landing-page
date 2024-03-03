@@ -65,22 +65,26 @@ export default function Home() {
             />
           </div>
 
-          <div>
+          <div className="flex justify-center">
+          {['create-meal.svg','dashboard.svg','cooking.svg'].map((imageName: string) => <div>
             <div className="mx-auto flex max-w-6xl justify-center px-6 lg:px-8">
               <div className="mt-8 flow-root sm:mt-16">
                 <div className="-m-2 w-fit rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10  lg:-m-4 lg:rounded-2xl lg:p-4">
                   <Image
-                    src="/dashboard-preview.png"
+                    src={imageName}
                     alt="product preview"
-                    width={955}
-                    height={808}
+                    width={300}
+                    height={600}
                     quality={100}
-                    className="rounded-md bg-special p-2 shadow-2xl ring-1 ring-gray-900/10 md:p-8"
+                    className="rounded-md bg-special p-2 shadow-2xl ring-1 ring-gray-900/10"
                   />
                 </div>
               </div>
             </div>
           </div>
+            )}
+          </div>
+
 
           <div
             aria-hidden="true"
@@ -105,11 +109,10 @@ export default function Home() {
             <div className="mb-6 px-6 lg:px-8">
               <div className="mx-auto max-w-2xl sm:text-center">
                 <h2 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">
-                  Start your first session in seconds
+                  Launch Your Tailored Nutrition Plan Instantly
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Improving your spoken fluency has never been easier than with
-                  Convo.
+                  Achieve your health and fitness goals with ease, starting now.
                 </p>
               </div>
             </div>
@@ -122,29 +125,25 @@ export default function Home() {
                     Step 1
                   </span>
                   <span className="text-xl font-semibold">
-                    Sign up for a Free Account
+                    Customize Your Meal Criteria
                   </span>
-                  {/* <span className="mt-2 text-zinc-700">
-                Either starting out with a free plan or choose our{" "}
-                <Link
-                  href="/pricing"
-                  className="text-blue-700 underline underline-offset-2"
-                >
-                  pro plan
-                </Link>
-                .
-              </span> */}
+                  {/* I can add links to words later if I want, like it was in the original */}
+                  <span className="mt-2 text-zinc-700">
+                    Choose your desired balance of proteins, carbs, and fats for each meal.
+              </span>
                 </div>
               </li>
               <li className="md:flex-1">
                 <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
                   <span className="text-sm font-medium text-blue-600">
-                    Step 2
+Step 2
                   </span>
                   <span className="text-xl font-semibold">
-                    Choose a <span className="text-blue-600">Language</span> &{" "}
-                    <span className="text-blue-600">Scenario</span>
+                    Get Your Personalized Plan
                   </span>
+                  <span className="mt-2 text-zinc-700">
+               Access your bespoke meal plan complete with a categorized shopping list.
+              </span>
                 </div>
               </li>
               <li className="md:flex-1">
@@ -153,11 +152,11 @@ export default function Home() {
                     Step 3
                   </span>
                   <span className="text-xl font-semibold">
-                    Start Your Speaking Session
+                    Customize to Your Contentment
                   </span>
-                  {/* <span className="mt-2 text-zinc-700">
-                
-              </span> */}
+                  <span className="mt-2 text-zinc-700">
+                    Easily regenerate any part of your meal plan until it's the perfect fit for your palate.
+              </span>
                 </div>
               </li>
             </ol>
@@ -168,11 +167,10 @@ export default function Home() {
             <div className="mb-6 px-6 lg:px-8">
               <div className="mx-auto max-w-2xl sm:text-center">
                 <h2 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">
-                  Practice in Real Life Scenarios
+                  Savor the Variety, Simplify Your Life, and Meet Your Goals
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
-                  Get help if you make a mistake and guidance on saying
-                  something in your target language.
+                  Embrace the ease and excitement of personalized meal planning.
                 </p>
               </div>
             </div>
@@ -181,12 +179,12 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="flex flex-col gap-6 md:flex-row">
                 <Card className="flex flex-col items-center justify-center gap-2 p-6 md:flex-1">
-                  <CardTitle>At the Cafe</CardTitle>
+                  <CardTitle>Endless Culinary Exploration</CardTitle>
                   <CardDescription className="mb-3 text-center">
-                    Learn how to order drinks and snacks
+                    Forget about repetitive, dull meals. Our dynamic meal planner ensures every dish is a new adventure tailored to your taste.
                   </CardDescription>
                   <Image
-                    src="/coffee.webp"
+                    src="/plate1.svg"
                     alt="cafe scenario"
                     width={128}
                     height={128}
@@ -194,12 +192,12 @@ export default function Home() {
                   />
                 </Card>
                 <Card className="flex flex-col items-center justify-center gap-2 p-6 md:flex-1">
-                  <CardTitle>Getting A Taxi</CardTitle>
+                  <CardTitle>Reclaim Your Time</CardTitle>
                   <CardDescription className="mb-3 text-center">
-                    Learn how to navigate and get directions
+                    Leave the hassle of meal planning to us. Gain back hours each week with a meal plan that's ready when you are.
                   </CardDescription>
                   <Image
-                    src="/taxi.webp"
+                    src="/time.svg"
                     alt="cafe scenario"
                     width={128}
                     height={128}
@@ -208,9 +206,9 @@ export default function Home() {
                 </Card>
 
                 <Card className="flex flex-col items-center justify-center gap-2 p-6 md:flex-1">
-                  <CardTitle>Social Activities</CardTitle>
+                  <CardTitle>Nutritionally Crafted for You</CardTitle>
                   <CardDescription className="mb-3 text-center">
-                    Learn how to make plans and catch up with friends
+                    Your meals fit within your macro goals and dietary needs, so you can stay focused on your objectives without compromise.
                   </CardDescription>
                   <Image
                     src="/schedule.webp"
@@ -230,7 +228,7 @@ export default function Home() {
           </div>
 
           {/* Powered By */}
-          <div>
+          {/* <div>
             <div className="mb-6 px-6 lg:px-8">
               <div className="mx-auto max-w-2xl sm:text-center">
                 <h2 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">
@@ -290,10 +288,10 @@ export default function Home() {
                 </Card>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Feedback */}
-          <div>
+           {/* <div>
             <div className="mb-6 px-6 lg:px-8">
               <div className="mx-auto max-w-2xl sm:text-center">
                 <h2 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">
@@ -304,7 +302,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* steps */}
 
             <div>
               <div className="mx-auto flex max-w-6xl justify-center px-6 lg:px-8">
@@ -322,8 +319,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+            </div> */}
+        </div> 
       </MaxWidthWrapper>
 
       <Footer />

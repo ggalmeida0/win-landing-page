@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Win | Meal Planing",
+  title: "Win Dieting| Meal Planing",
   description: "Win is a meal planning generation app",
 };
 

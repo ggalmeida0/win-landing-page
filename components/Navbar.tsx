@@ -24,14 +24,14 @@ const Navbar = () => {
             className="z-40 flex items-center justify-center gap-1"
           >
             <Image
-              src="/logo.png"
-              alt="win logo"
+              src="/icon.svg"
+              alt="win dieting logo"
               width={70}
               height={70}
               quality={100}
               className="h-12 w-12"
             />
-            <span className="text-2xl font-semibold">Win</span>
+            <span className="text-2xl font-semibold">Win Dieting</span>
           </Link>
           <div className="flex items-center gap-1 sm:gap-4">
             {!isUserSignedIn ? (
