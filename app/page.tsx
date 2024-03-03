@@ -33,7 +33,7 @@ export default function Home() {
           and calorie goals, ensuring a balance of nutrition and taste
         </p>
         <div className="m-10 flex flex-col">
-          <Input placeholder="Enter email" />
+          <Input className="outline outline-1" placeholder="Enter email" />
           <Link
             className={cn(
               buttonVariants({
@@ -66,25 +66,27 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center">
-          {['create-meal.svg','dashboard.svg','cooking.svg'].map((imageName: string) => <div>
-            <div className="mx-auto flex max-w-6xl justify-center px-6 lg:px-8">
-              <div className="mt-8 flow-root sm:mt-16">
-                <div className="-m-2 w-fit rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10  lg:-m-4 lg:rounded-2xl lg:p-4">
-                  <Image
-                    src={imageName}
-                    alt="product preview"
-                    width={300}
-                    height={600}
-                    quality={100}
-                    className="rounded-md bg-special p-2 shadow-2xl ring-1 ring-gray-900/10"
-                  />
+            {["create-meal.svg", "dashboard.svg", "cooking.svg"].map(
+              (imageName: string) => (
+                <div>
+                  <div className="mx-auto flex max-w-6xl justify-center px-6 lg:px-8">
+                    <div className="mt-8 flow-root sm:mt-16">
+                      <div className="-m-2 w-fit rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10  lg:-m-4 lg:rounded-2xl lg:p-4">
+                        <Image
+                          src={imageName}
+                          alt="product preview"
+                          width={300}
+                          height={600}
+                          quality={100}
+                          className="rounded-md bg-special p-2 shadow-2xl ring-1 ring-gray-900/10"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              ),
             )}
           </div>
-
 
           <div
             aria-hidden="true"
@@ -129,21 +131,23 @@ export default function Home() {
                   </span>
                   {/* I can add links to words later if I want, like it was in the original */}
                   <span className="mt-2 text-zinc-700">
-                    Choose your desired balance of proteins, carbs, and fats for each meal.
-              </span>
+                    Choose your desired balance of proteins, carbs, and fats for
+                    each meal.
+                  </span>
                 </div>
               </li>
               <li className="md:flex-1">
                 <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
                   <span className="text-sm font-medium text-blue-600">
-Step 2
+                    Step 2
                   </span>
                   <span className="text-xl font-semibold">
                     Get Your Personalized Plan
                   </span>
                   <span className="mt-2 text-zinc-700">
-               Access your bespoke meal plan complete with a categorized shopping list.
-              </span>
+                    Access your bespoke meal plan complete with a categorized
+                    shopping list.
+                  </span>
                 </div>
               </li>
               <li className="md:flex-1">
@@ -155,8 +159,9 @@ Step 2
                     Customize to Your Contentment
                   </span>
                   <span className="mt-2 text-zinc-700">
-                    Easily regenerate any part of your meal plan until it's the perfect fit for your palate.
-              </span>
+                    Easily regenerate any part of your meal plan until it's the
+                    perfect fit for your palate.
+                  </span>
                 </div>
               </li>
             </ol>
@@ -181,7 +186,9 @@ Step 2
                 <Card className="flex flex-col items-center justify-center gap-2 p-6 md:flex-1">
                   <CardTitle>Endless Culinary Exploration</CardTitle>
                   <CardDescription className="mb-3 text-center">
-                    Forget about repetitive, dull meals. Our dynamic meal planner ensures every dish is a new adventure tailored to your taste.
+                    Forget about repetitive, dull meals. Our dynamic meal
+                    planner ensures every dish is a new adventure tailored to
+                    your taste.
                   </CardDescription>
                   <Image
                     src="/plate1.svg"
@@ -194,7 +201,8 @@ Step 2
                 <Card className="flex flex-col items-center justify-center gap-2 p-6 md:flex-1">
                   <CardTitle>Reclaim Your Time</CardTitle>
                   <CardDescription className="mb-3 text-center">
-                    Leave the hassle of meal planning to us. Gain back hours each week with a meal plan that's ready when you are.
+                    Leave the hassle of meal planning to us. Gain back hours
+                    each week with a meal plan that's ready when you are.
                   </CardDescription>
                   <Image
                     src="/time.svg"
@@ -208,10 +216,11 @@ Step 2
                 <Card className="flex flex-col items-center justify-center gap-2 p-6 md:flex-1">
                   <CardTitle>Nutritionally Crafted for You</CardTitle>
                   <CardDescription className="mb-3 text-center">
-                    Your meals fit within your macro goals and dietary needs, so you can stay focused on your objectives without compromise.
+                    Your meals fit within your macro goals and dietary needs, so
+                    you can stay focused on your objectives without compromise.
                   </CardDescription>
                   <Image
-                    src="/schedule.webp"
+                    src="/kitchen.svg"
                     alt="cafe scenario"
                     width={128}
                     height={128}
@@ -291,7 +300,7 @@ Step 2
           </div> */}
 
           {/* Feedback */}
-           {/* <div>
+          {/* <div>
             <div className="mb-6 px-6 lg:px-8">
               <div className="mx-auto max-w-2xl sm:text-center">
                 <h2 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">
@@ -320,7 +329,7 @@ Step 2
               </div>
             </div>
             </div> */}
-        </div> 
+        </div>
       </MaxWidthWrapper>
 
       <Footer />
